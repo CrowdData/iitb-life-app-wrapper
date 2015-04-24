@@ -83,7 +83,7 @@ public class WebWrapper extends ActionBarActivity {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 actionBar.show();
-                if(!url.contains("crowddata")){
+                if(!url.contains(getString(R.string.RESTRICT))){
                     Intent i=new Intent(Intent.ACTION_VIEW);
                     i.setData(Uri.parse(url));
                     startActivity(i);
@@ -96,7 +96,7 @@ public class WebWrapper extends ActionBarActivity {
         });
         dashboardView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
-        dashboardView.loadUrl("http://crowddata.abdn.ac.uk/dashboard");
+        dashboardView.loadUrl(getString(R.string.IITBLIFE_URL));
 
 
     }

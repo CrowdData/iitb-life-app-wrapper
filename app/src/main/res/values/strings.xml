@@ -4,5 +4,7 @@
     <string name="app_name">IITB Life</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="IITBLIFE_URL">http://crowddata.abdn.ac.uk/dashboard/</string>
+    <string name="RESTRICT">crowddata</string>
 
 </resources>
